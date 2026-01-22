@@ -20,7 +20,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
     if (!isHydrated) return;
 
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % 3);
+      setCurrentSlide((prev) => (prev + 1) % 2);
     }, 5000);
 
     return () => clearInterval(interval);
