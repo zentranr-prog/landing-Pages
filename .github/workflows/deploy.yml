@@ -33,5 +33,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # OJO: Si usas Create React App (CRA) pon 'build'. Si usas Vite pon 'dist'.
+          folder: build # OJO: Si usas Create React App (CRA) pon 'build'. Si usas Vite pon 'dist'.
           branch: gh-pages # La rama donde vivirá la versión compilada
