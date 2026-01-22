@@ -41,12 +41,6 @@ const ServiceHero = ({ className = '' }: ServiceHeroProps) => {
             >
               Explorar Servicios
             </a>
-            <a
-              href="/contact"
-              className="px-8 py-4 bg-primary-foreground/10 text-primary-foreground border-2 border-primary-foreground/30 rounded-md font-heading font-semibold text-base transition-all duration-300 hover:bg-primary-foreground/20 hover:border-primary-foreground/50 w-full sm:w-auto"
-            >
-              Solicitar Consulta
-            </a>
           </div>
         </div>
       </div>

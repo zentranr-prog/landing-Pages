@@ -264,7 +264,7 @@ const ContactFormSection = ({ selectedConsultationType = '', className = '' }: C
                 </p>
               </div>
               <p className="text-sm text-muted-foreground">
-                Si tiene alguna pregunta urgente, no dude en llamarnos al +51 1 234 5678
+                Si tiene alguna pregunta urgente, no dude en llamarnos al +51 930 120 687
               </p>
             </div>
           </div>

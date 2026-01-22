@@ -186,14 +186,14 @@ const FAQSection = ({ className = '' }: FAQSectionProps) => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="tel:+5112345678"
+                href="tel:+51930120687"
                 className="px-6 py-3 bg-primary text-primary-foreground rounded-md font-heading font-semibold text-sm transition-all duration-300 hover:bg-primary/90 hover:shadow-brand hover:scale-105 active:scale-95 inline-flex items-center"
               >
                 <Icon name="PhoneIcon" size={20} variant="outline" className="mr-2" />
                 Llamar Ahora
               </a>
               <a
-                href="mailto:contacto@zentranr.pe"
+                href="mailto:zentranr@gmail.com"
                 className="px-6 py-3 bg-secondary text-secondary-foreground rounded-md font-heading font-semibold text-sm transition-all duration-300 hover:bg-secondary/90 inline-flex items-center"
               >
                 <Icon name="EnvelopeIcon" size={20} variant="outline" className="mr-2" />

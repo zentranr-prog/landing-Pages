@@ -11,27 +11,22 @@ const Footer = ({ className = '' }: FooterProps) => {
 
   const footerLinks = {
     services: [
-      { label: 'Digital Transformation', path: '/services' },
-      { label: 'Technology Consulting', path: '/technology-consulting' },
-      { label: 'Custom Development', path: '/services' },
-      { label: 'Cloud Solutions', path: '/services' },
+      { label: 'Transformación Digital', path: '/services' },
+      { label: 'Consultoría Tecnológica', path: '/technology-consulting' },
+      { label: 'Desarrollo a Medida', path: '/services' },
+      { label: 'Soluciones Cloud', path: '/services' },
     ],
     company: [
-      { label: 'About Us', path: '/about' },
-      { label: 'Our Approach', path: '/about' },
-      { label: 'Case Studies', path: '/resources' },
-      { label: 'Careers', path: '/about' },
+      { label: 'Nosotros', path: '/about' },
+      { label: 'Nuestro Enfoque', path: '/about' },
     ],
     resources: [
       { label: 'Blog', path: '/resources' },
-      { label: 'Whitepapers', path: '/resources' },
-      { label: 'Technology Stack', path: '/resources' },
-      { label: 'FAQ', path: '/resources' },
     ],
     legal: [
-      { label: 'Privacy Policy', path: '/resources' },
-      { label: 'Terms of Service', path: '/resources' },
-      { label: 'Cookie Policy', path: '/resources' },
+      { label: 'Política de Privacidad', path: '/resources' },
+      { label: 'Términos de Servicio', path: '/resources' },
+      { label: 'Política de Cookies', path: '/resources' },
     ],
   };
 
@@ -57,30 +52,43 @@ const Footer = ({ className = '' }: FooterProps) => {
                 xmlns="http://www.w3.org/2000/svg"
                 className="transition-transform duration-300 group-hover:scale-105"
               >
-                <circle cx="20" cy="20" r="18" stroke="url(#footerGradient1)" strokeWidth="2" />
-                <path
-                  d="M12 20 L18 14 L24 20 L30 14"
-                  stroke="url(#footerGradient2)"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <circle cx="20" cy="20" r="3" fill="var(--color-accent)" />
                 <defs>
-                  <linearGradient id="footerGradient1" x1="0" y1="0" x2="40" y2="40">
+                  <linearGradient id="gradDark" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stopColor="var(--color-primary)" />
-                    <stop offset="100%" stopColor="var(--color-accent)" />
+                    <stop offset="100%" stopColor="var(--color-secondary)" />
                   </linearGradient>
-                  <linearGradient id="footerGradient2" x1="12" y1="14" x2="30" y2="14">
+                  <linearGradient id="gradLight" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stopColor="var(--color-accent)" />
                     <stop offset="100%" stopColor="var(--color-primary)" />
                   </linearGradient>
                 </defs>
+
+                <g transform="translate(4, 5)">
+                  <rect x="22" y="0" width="12" height="12" rx="3" fill="url(#gradLight)" />
+
+                  <rect x="0" y="5" width="20" height="20" rx="4" fill="url(#gradDark)" />
+
+                  <rect x="12" y="16" width="20" height="20" rx="4" fill="url(#gradDark)" />
+
+                  <g
+                    stroke="white"
+                    strokeWidth="1.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M 10 12 L 10 18 L 22 18 L 22 24" opacity="0.8" />
+                    <circle cx="10" cy="10" r="2.5" />
+                    <circle cx="22" cy="26" r="2.5" />
+                  </g>
+                </g>
               </svg>
               <span className="text-2xl font-heading font-bold tracking-tight">ZENTRANR</span>
             </Link>
             <p className="text-secondary-foreground/80 text-sm leading-relaxed mb-6 max-w-sm">
-              Transforming businesses through thoughtful technology solutions. We bring zen philosophy to digital transformation, creating elegant systems that drive measurable growth.
+              Transformamos negocios mediante soluciones tecnológicas conscientes. Aplicamos la
+              filosofía zen a la transformación digital, creando sistemas elegantes que impulsan un
+              crecimiento medible.
             </p>
             <div className="flex items-center space-x-4">
               {socialLinks.map((social) => (
@@ -101,7 +109,7 @@ const Footer = ({ className = '' }: FooterProps) => {
           {/* Services Links */}
           <div>
             <h3 className="text-sm font-heading font-semibold uppercase tracking-wider mb-4">
-              Services
+              Servicios
             </h3>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
@@ -120,7 +128,7 @@ const Footer = ({ className = '' }: FooterProps) => {
           {/* Company Links */}
           <div>
             <h3 className="text-sm font-heading font-semibold uppercase tracking-wider mb-4">
-              Company
+              Compañia
             </h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
@@ -139,7 +147,7 @@ const Footer = ({ className = '' }: FooterProps) => {
           {/* Resources Links */}
           <div>
             <h3 className="text-sm font-heading font-semibold uppercase tracking-wider mb-4">
-              Resources
+              Recursos
             </h3>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
@@ -157,30 +165,7 @@ const Footer = ({ className = '' }: FooterProps) => {
         </div>
 
         {/* Newsletter Section */}
-        <div className="mt-12 pt-8 border-t border-secondary-foreground/20">
-          <div className="max-w-2xl">
-            <h3 className="text-lg font-heading font-semibold mb-2">
-              Stay Updated with Technology Insights
-            </h3>
-            <p className="text-sm text-secondary-foreground/80 mb-4">
-              Subscribe to receive expert analysis, industry trends, and transformation strategies.
-            </p>
-            <form className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-2.5 rounded-md bg-secondary-foreground/10 border border-secondary-foreground/20 text-secondary-foreground placeholder:text-secondary-foreground/50 focus:outline-none focus:ring-2 focus:ring-accent transition-all duration-300"
-                aria-label="Email address"
-              />
-              <button
-                type="submit"
-                className="px-6 py-2.5 bg-accent text-accent-foreground rounded-md font-heading font-semibold text-sm transition-all duration-300 hover:bg-accent/90 hover:shadow-brand hover:scale-105 active:scale-95 whitespace-nowrap"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
+       
       </div>
 
       {/* Bottom Bar */}

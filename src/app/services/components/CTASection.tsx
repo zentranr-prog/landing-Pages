@@ -38,13 +38,6 @@ const CTASection = ({ className = '' }: CTASectionProps) => {
               <span>Agendar Consulta Gratuita</span>
               <Icon name="CalendarIcon" size={20} />
             </a>
-            <a
-              href="/resources"
-              className="px-8 py-4 bg-primary-foreground/10 text-primary-foreground border-2 border-primary-foreground/30 rounded-md font-heading font-semibold text-base transition-all duration-300 hover:bg-primary-foreground/20 hover:border-primary-foreground/50 w-full sm:w-auto inline-flex items-center justify-center space-x-2"
-            >
-              <span>Ver Recursos</span>
-              <Icon name="DocumentTextIcon" size={20} />
-            </a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-primary-foreground/20">

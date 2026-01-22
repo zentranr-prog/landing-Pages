@@ -34,29 +34,7 @@ const ContactHero = ({ className = '' }: ContactHeroProps) => {
           </p>
 
           {/* Quick Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 mt-12">
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 border border-primary-foreground/20">
-              <div className="flex items-center justify-center mb-3">
-                <Icon name="ClockIcon" size={32} variant="outline" className="text-accent" />
-              </div>
-              <div className="text-3xl font-heading font-bold text-primary-foreground mb-1">24h</div>
-              <div className="text-sm text-primary-foreground/80">Tiempo de Respuesta</div>
-            </div>
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 border border-primary-foreground/20">
-              <div className="flex items-center justify-center mb-3">
-                <Icon name="UserGroupIcon" size={32} variant="outline" className="text-accent" />
-              </div>
-              <div className="text-3xl font-heading font-bold text-primary-foreground mb-1">500+</div>
-              <div className="text-sm text-primary-foreground/80">Clientes Satisfechos</div>
-            </div>
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 border border-primary-foreground/20">
-              <div className="flex items-center justify-center mb-3">
-                <Icon name="StarIcon" size={32} variant="solid" className="text-accent" />
-              </div>
-              <div className="text-3xl font-heading font-bold text-primary-foreground mb-1">98%</div>
-              <div className="text-sm text-primary-foreground/80">Tasa de Satisfacción</div>
-            </div>
-          </div>
+        
         </div>
       </div>
     </section>

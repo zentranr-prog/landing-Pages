@@ -22,7 +22,7 @@ const ContactMethods = ({ className = '' }: ContactMethodsProps) => {
       icon: 'PhoneIcon',
       title: 'Teléfono',
       description: 'Hable directamente con nuestro equipo',
-      value: '+51 1 234 5678',
+      value: '+51 930 120 687',
       action: 'tel:+5112345678',
       available: 'Lun - Vie: 9:00 - 18:00'
     },
@@ -31,27 +31,9 @@ const ContactMethods = ({ className = '' }: ContactMethodsProps) => {
       icon: 'EnvelopeIcon',
       title: 'Correo Electrónico',
       description: 'Envíenos un mensaje detallado',
-      value: 'contacto@zentranr.pe',
-      action: 'mailto:contacto@zentranr.pe',
+      value: 'zentranr@gmail.com',
+      action: 'mailto:zentranr@gmail.com',
       available: 'Respuesta en 24 horas'
-    },
-    {
-      id: 'whatsapp',
-      icon: 'ChatBubbleLeftRightIcon',
-      title: 'WhatsApp Business',
-      description: 'Chat en tiempo real',
-      value: '+51 987 654 321',
-      action: 'https://wa.me/51987654321',
-      available: 'Lun - Vie: 9:00 - 18:00'
-    },
-    {
-      id: 'location',
-      icon: 'MapPinIcon',
-      title: 'Oficina Principal',
-      description: 'Visítenos en Lima',
-      value: 'Av. Javier Prado Este 476, San Isidro, Lima',
-      action: '#map-section',
-      available: 'Lun - Vie: 9:00 - 18:00'
     }
   ];
 
@@ -115,29 +97,7 @@ const ContactMethods = ({ className = '' }: ContactMethodsProps) => {
           </div>
 
           {/* Emergency Contact */}
-          <div className="mt-12 bg-gradient-to-r from-accent/10 to-primary/10 rounded-lg p-8 border border-accent/20">
-            <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
-                  <Icon name="BellAlertIcon" size={24} variant="solid" className="text-accent-foreground" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-heading font-semibold text-foreground mb-1">
-                    Soporte de Emergencia 24/7
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    Para clientes con contratos de soporte activo
-                  </p>
-                </div>
-              </div>
-              <a
-                href="tel:+5112345679"
-                className="px-6 py-3 bg-accent text-accent-foreground rounded-md font-heading font-semibold text-sm transition-all duration-300 hover:bg-accent/90 hover:shadow-brand hover:scale-105 active:scale-95 whitespace-nowrap"
-              >
-                +51 1 234 5679
-              </a>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

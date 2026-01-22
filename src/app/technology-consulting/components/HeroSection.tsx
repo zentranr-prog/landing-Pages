@@ -55,20 +55,7 @@ const HeroSection = ({ onScheduleConsultation }: HeroSectionProps) => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-wrap items-center justify-center gap-8 text-white/80">
-            <div className="flex items-center space-x-2">
-              <Icon name="CheckBadgeIcon" size={24} variant="solid" className="text-accent" />
-              <span className="text-sm font-heading">15+ Años de Experiencia</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Icon name="BuildingOfficeIcon" size={24} variant="solid" className="text-accent" />
-              <span className="text-sm font-heading">200+ Empresas Transformadas</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Icon name="TrophyIcon" size={24} variant="solid" className="text-accent" />
-              <span className="text-sm font-heading">98% Tasa de Éxito</span>
-            </div>
-          </div>
+          
         </div>
       </div>
 

@@ -35,13 +35,6 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
       ctaSecondary: "Explorar Servicios"
     },
     {
-      title: "Soluciones de Software Empresarial que Escalan con su Negocio",
-      subtitle: "Desarrollo Personalizado que Impulsa la Eficiencia Operacional",
-      description: "Desde aplicaciones empresariales hasta plataformas web y soluciones móviles, creamos sistemas elegantes que resuelven problemas complejos y generan resultados comerciales tangibles.",
-      cta: "Ver Casos de Éxito",
-      ctaSecondary: "Conocer Tecnologías"
-    },
-    {
       title: "Consultoría en Transformación Digital para Líderes Visionarios",
       subtitle: "Estrategia Tecnológica que Genera Ventaja Competitiva",
       description: "Auditorías tecnológicas, optimización de sistemas y metodologías de innovación que llevan a su organización del estado actual al futuro digital deseado.",

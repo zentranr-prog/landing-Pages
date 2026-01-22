@@ -22,8 +22,6 @@ export default function AboutPage() {
         <HeroSection />
         <MissionSection />
         <CultureSection />
-        <TestimonialsSection />
-        <TimelineSection />
       </main>
 
       <Footer />

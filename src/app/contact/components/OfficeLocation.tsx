@@ -172,7 +172,7 @@ const OfficeLocation = ({ className = '' }: OfficeLocationProps) => {
                 </div>
               </div>
               <a
-                href="tel:+5112345678"
+                href="tel:+51930120687"
                 className="px-6 py-3 bg-primary text-primary-foreground rounded-md font-heading font-semibold text-sm transition-all duration-300 hover:bg-primary/90 hover:shadow-brand hover:scale-105 active:scale-95 whitespace-nowrap"
               >
                 Llamar Ahora

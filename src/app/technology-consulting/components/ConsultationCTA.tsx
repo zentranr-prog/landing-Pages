@@ -156,7 +156,7 @@ const ConsultationCTA = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => handleInputChange('phone', e.target.value)}
-                      placeholder="+51 999 999 999"
+                      placeholder="+51 930 120 687"
                       className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
                     />
                   </div>
@@ -226,14 +226,14 @@ const ConsultationCTA = () => {
                 <Icon name="PhoneIcon" size={24} variant="outline" className="text-white" />
               </div>
               <div className="text-sm font-heading font-semibold text-white mb-1">Llámenos</div>
-              <div className="text-white/80">+51 1 234 5678</div>
+              <div className="text-white/80">+51 930 120 687</div>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center mb-3">
                 <Icon name="EnvelopeIcon" size={24} variant="outline" className="text-white" />
               </div>
               <div className="text-sm font-heading font-semibold text-white mb-1">Email</div>
-              <div className="text-white/80">consultas@zentranr.com</div>
+              <div className="text-white/80">zentranr@gmail.com</div>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center mb-3">

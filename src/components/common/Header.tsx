@@ -43,7 +43,7 @@ const Header = ({ className = '' }: HeaderProps) => {
     { label: 'Servicios', path: '/services' },
     { label: 'Consulta Tecnologica', path: '/technology-consulting' },
     { label: 'Acerca', path: '/about' },
-    { label: 'Recurso', path: '/resources' },
+    //{ label: 'Recurso', path: '/resources' },
   ];
 
   const isActivePath = (path: string) => pathname === path;
@@ -67,25 +67,36 @@ const Header = ({ className = '' }: HeaderProps) => {
                 xmlns="http://www.w3.org/2000/svg"
                 className="transition-transform duration-300 group-hover:scale-105"
               >
-                <circle cx="20" cy="20" r="18" stroke="url(#gradient1)" strokeWidth="2" />
-                <path
-                  d="M12 20 L18 14 L24 20 L30 14"
-                  stroke="url(#gradient2)"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <circle cx="20" cy="20" r="3" fill="var(--color-accent)" />
                 <defs>
-                  <linearGradient id="gradient1" x1="0" y1="0" x2="40" y2="40">
+                  <linearGradient id="gradDark" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stopColor="var(--color-primary)" />
-                    <stop offset="100%" stopColor="var(--color-accent)" />
+                    <stop offset="100%" stopColor="var(--color-secondary)" />
                   </linearGradient>
-                  <linearGradient id="gradient2" x1="12" y1="14" x2="30" y2="14">
-                    <stop offset="0%" stopColor="var(--color-secondary)" />
+                  <linearGradient id="gradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="var(--color-accent)" />
                     <stop offset="100%" stopColor="var(--color-primary)" />
                   </linearGradient>
                 </defs>
+
+                <g transform="translate(4, 5)">
+                  <rect x="22" y="0" width="12" height="12" rx="3" fill="url(#gradLight)" />
+
+                  <rect x="0" y="5" width="20" height="20" rx="4" fill="url(#gradDark)" />
+
+                  <rect x="12" y="16" width="20" height="20" rx="4" fill="url(#gradDark)" />
+
+                  <g
+                    stroke="white"
+                    strokeWidth="1.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M 10 12 L 10 18 L 22 18 L 22 24" opacity="0.8" />
+                    <circle cx="10" cy="10" r="2.5" />
+                    <circle cx="22" cy="26" r="2.5" />
+                  </g>
+                </g>
               </svg>
             </div>
             <span className="text-xl lg:text-2xl font-heading font-bold text-foreground tracking-tight">
@@ -101,7 +112,8 @@ const Header = ({ className = '' }: HeaderProps) => {
                 href={item.path}
                 className={`px-4 py-2 rounded-md text-sm font-heading font-medium transition-all duration-300 ${
                   isActivePath(item.path)
-                    ? 'text-primary bg-primary/10' :'text-foreground hover:text-primary hover:bg-muted'
+                    ? 'text-primary bg-primary/10'
+                    : 'text-foreground hover:text-primary hover:bg-muted'
                 }`}
               >
                 {item.label}
@@ -115,7 +127,7 @@ const Header = ({ className = '' }: HeaderProps) => {
               href="/contact"
               className="px-6 py-2.5 bg-primary text-primary-foreground rounded-md font-heading font-semibold text-sm transition-all duration-300 hover:bg-primary/90 hover:shadow-brand hover:scale-105 active:scale-95"
             >
-              Schedule Consultation
+              Agendar consulta
             </Link>
           </div>
 
@@ -125,11 +137,7 @@ const Header = ({ className = '' }: HeaderProps) => {
             className="lg:hidden p-2 rounded-md text-foreground hover:bg-muted transition-colors duration-300"
             aria-label="Toggle mobile menu"
           >
-            <Icon
-              name={isMobileMenuOpen ? 'XMarkIcon' : 'Bars3Icon'}
-              size={24}
-              variant="outline"
-            />
+            <Icon name={isMobileMenuOpen ? 'XMarkIcon' : 'Bars3Icon'} size={24} variant="outline" />
           </button>
         </div>
       </div>
@@ -144,7 +152,8 @@ const Header = ({ className = '' }: HeaderProps) => {
                 href={item.path}
                 className={`px-4 py-3 rounded-md text-base font-heading font-medium transition-all duration-300 ${
                   isActivePath(item.path)
-                    ? 'text-primary bg-primary/10' :'text-foreground hover:text-primary hover:bg-muted'
+                    ? 'text-primary bg-primary/10'
+                    : 'text-foreground hover:text-primary hover:bg-muted'
                 }`}
               >
                 {item.label}
@@ -155,7 +164,7 @@ const Header = ({ className = '' }: HeaderProps) => {
                 href="/contact"
                 className="block w-full px-6 py-3 bg-primary text-primary-foreground rounded-md font-heading font-semibold text-center transition-all duration-300 hover:bg-primary/90 active:scale-95"
               >
-                Schedule Consultation
+                Agendar consulta
               </Link>
             </div>
           </nav>

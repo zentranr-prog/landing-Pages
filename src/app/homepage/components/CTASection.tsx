@@ -42,31 +42,7 @@ const CTASection = ({ className = '' }: CTASectionProps) => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-12 pt-12 border-t border-white/20">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="flex items-center justify-center space-x-3">
-                <Icon name="CheckBadgeIcon" size={32} variant="solid" className="text-white" />
-                <div className="text-left">
-                  <div className="text-sm text-white/80">Respuesta en</div>
-                  <div className="text-lg font-heading font-bold text-white">24 Horas</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center space-x-3">
-                <Icon name="ShieldCheckIcon" size={32} variant="solid" className="text-white" />
-                <div className="text-left">
-                  <div className="text-sm text-white/80">Garantía de</div>
-                  <div className="text-lg font-heading font-bold text-white">Satisfacción</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center space-x-3">
-                <Icon name="UserGroupIcon" size={32} variant="solid" className="text-white" />
-                <div className="text-left">
-                  <div className="text-sm text-white/80">Más de</div>
-                  <div className="text-lg font-heading font-bold text-white">150 Clientes</div>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>

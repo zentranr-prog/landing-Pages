@@ -12,10 +12,8 @@ const HomepageInteractive = () => {
   return (
     <>
       <HeroSection />
-      <StatsSection />
       <ServicesPreview />
       <TechnologyStack />
-      <TestimonialsSection />
       <CTASection />
     </>
   );

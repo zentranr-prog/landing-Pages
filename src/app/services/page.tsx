@@ -26,11 +26,9 @@ export default function ServicesPage() {
         <ServiceOverview />
         <TechnologyMatrix />
         <ServiceDetails />
-        <CaseStudies />
         <ProcessFlow />
         <ProjectEstimator />
         <FAQ />
-        <CTASection />
       </main>
 
       <Footer />

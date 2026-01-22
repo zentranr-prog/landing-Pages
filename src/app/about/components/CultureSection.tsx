@@ -152,36 +152,7 @@ const CultureSection = ({ className = '' }: CultureSectionProps) => {
         </div>
 
         {/* Trust Signals */}
-        <div className="mt-20">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h3 className="text-2xl lg:text-3xl font-heading font-bold text-foreground mb-4">
-              Certificaciones & Reconocimientos
-            </h3>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Nuestro compromiso con la excelencia está respaldado por certificaciones internacionales y reconocimiento de la industria.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { name: "ISO 9001:2015", desc: "Gestión de Calidad" },
-              { name: "ISO 27001", desc: "Seguridad Información" },
-              { name: "AWS Partner", desc: "Advanced Tier" },
-              { name: "Microsoft Partner", desc: "Gold Certified" }
-            ].map((cert, index) => (
-              <div
-                key={index}
-                className="bg-card rounded-xl p-6 text-center shadow-sm hover:shadow-brand transition-all duration-300 border border-border group"
-              >
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Icon name="ShieldCheckIcon" size={32} variant="solid" />
-                </div>
-                <h4 className="font-heading font-bold text-foreground mb-1">{cert.name}</h4>
-                <p className="text-sm text-muted-foreground">{cert.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        
       </div>
     </section>
   );

@@ -26,7 +26,6 @@ const TechnologyConsultingInteractive = () => {
       <ServicesOverview />
       <MethodologySection />
       <MaturityAssessment />
-      <CaseStudies />
       <ROICalculator />
       <div id="consultation-section">
         <ConsultationCTA />
