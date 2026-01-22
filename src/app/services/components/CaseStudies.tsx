@@ -26,7 +26,7 @@ const CaseStudies = ({ className = '' }: CaseStudiesProps) => {
     {
       id: 'fintech-platform',
       client: 'BancoDigital Perú',
-      industry: 'Finanzas',
+      industry: 'Finanzas ',
       challenge: 'Necesitaban modernizar su plataforma bancaria legacy para competir con fintechs emergentes y mejorar la experiencia del cliente.',
       solution: 'Desarrollamos una plataforma bancaria digital completa con arquitectura de microservicios, integrando APIs modernas y una interfaz de usuario intuitiva.',
       results: [
