@@ -28,14 +28,11 @@ jobs:
         run: |
           npm install
           npm run build
+          # Truco: Crear archivo .nojekyll para que GitHub no ignore los archivos de Next.js
+          touch out/.nojekyll 
 
-      - name: Chivato de Carpetas (Debug)
-        run: |
-          ls -R
-
-      # 4. Despliega la carpeta 'dist' (o 'build') a la rama gh-pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build # OJO: Si usas Create React App (CRA) pon 'build'. Si usas Vite pon 'dist'.
-          branch: gh-pages # La rama donde vivirá la versión compilada
+          folder: out  # <--- CAMBIO CLAVE: Next.js exporta a 'out'
+          branch: gh-pages

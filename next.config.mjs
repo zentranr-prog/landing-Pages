@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   productionBrowserSourceMaps: true,
   distDir: process.env.DIST_DIR || '.next', typescript: {
     ignoreBuildErrors: true,
@@ -7,8 +8,11 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   }, 
+  basePath: '/landing-Pages',
+  assetPrefix: '/landing-Pages',
   turbopack: {},
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
