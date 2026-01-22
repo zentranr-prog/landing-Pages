@@ -29,6 +29,10 @@ jobs:
           npm install
           npm run build
 
+      - name: Chivato de Carpetas (Debug)
+        run: |
+          ls -R
+
       # 4. Despliega la carpeta 'dist' (o 'build') a la rama gh-pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
