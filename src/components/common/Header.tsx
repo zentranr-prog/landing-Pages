@@ -39,11 +39,11 @@ const Header = ({ className = '' }: HeaderProps) => {
   }, [isMobileMenuOpen]);
 
   const navigationItems = [
-    { label: 'Home', path: '/homepage' },
-    { label: 'Services', path: '/services' },
-    { label: 'Technology Consulting', path: '/technology-consulting' },
-    { label: 'About', path: '/about' },
-    { label: 'Resources', path: '/resources' },
+    { label: 'Inicio', path: '/homepage' },
+    { label: 'Servicios', path: '/services' },
+    { label: 'Consulta Tecnologica', path: '/technology-consulting' },
+    { label: 'Acerca', path: '/about' },
+    { label: 'Recurso', path: '/resources' },
   ];
 
   const isActivePath = (path: string) => pathname === path;

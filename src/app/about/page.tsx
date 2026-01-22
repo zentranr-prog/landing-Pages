@@ -21,7 +21,6 @@ export default function AboutPage() {
       <main className="pt-16 lg:pt-20">
         <HeroSection />
         <MissionSection />
-        <LeadershipSection />
         <CultureSection />
         <TestimonialsSection />
         <TimelineSection />
