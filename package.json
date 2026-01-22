@@ -2,6 +2,7 @@
   "name": "zentranr-corporate",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zentranr-prog.github.io/landing-Pages",
   "rocketCritical": {
     "dependencies": [
       "next",

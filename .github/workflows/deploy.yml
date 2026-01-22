@@ -1,0 +1,37 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # O 'master', asegúrate de poner el nombre correcto de tu rama
+
+permissions:
+  contents: write # Permiso necesario para que el bot pueda publicar
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Descarga el código del repositorio
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Instala Node.js
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # O la versión que uses
+
+      # 3. Instala las dependencias y construye el proyecto
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+
+      # 4. Despliega la carpeta 'dist' (o 'build') a la rama gh-pages
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # OJO: Si usas Create React App (CRA) pon 'build'. Si usas Vite pon 'dist'.
+          branch: gh-pages # La rama donde vivirá la versión compilada
