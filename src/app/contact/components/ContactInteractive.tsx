@@ -29,7 +29,6 @@ const ContactInteractive = () => {
       <div id="contact-form">
         <ContactFormSection selectedConsultationType={selectedConsultationType} />
       </div>
-      <OfficeLocation />
       <FAQSection />
     </>
   );
